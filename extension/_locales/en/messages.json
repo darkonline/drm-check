@@ -6,7 +6,7 @@
     "message": "DRM Check"
   },
   "extDescription": {
-    "message": "Shows on Steam what restricts a game: third-party DRM like Denuvo, kernel anti-cheat, online-only play, AI content — and whether it is sold DRM-free on GOG."
+    "message": "Shows on Steam what restricts a game: Denuvo and other DRM, kernel anti-cheat, online only, AI content, DRM-free on GOG."
   },
   "secChecks": {
     "message": "What to check"

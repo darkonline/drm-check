@@ -6,8 +6,8 @@ const S = {
   extName: ['DRM Check — DRM, anti-cheat, online and AI on Steam', 'DRM Check — DRM, античит, онлайн и ИИ в Steam'],
   extShortName: ['DRM Check', 'DRM Check'],
   extDescription: [
-    'Shows on Steam what restricts a game: third-party DRM like Denuvo, kernel anti-cheat, online-only play, AI content — and whether it is sold DRM-free on GOG.',
-    'Показывает в Steam, что ограничивает игру: сторонний DRM вроде Denuvo, античит ядра, игру только по сети, ИИ-контент — и продаётся ли она без DRM в GOG.'],
+    'Shows on Steam what restricts a game: Denuvo and other DRM, kernel anti-cheat, online only, AI content, DRM-free on GOG.',
+    'Показывает в Steam, что ограничивает игру: Denuvo и другой DRM, античит ядра, только онлайн, ИИ-контент, наличие в GOG.'],
 
   secChecks: ['What to check', 'Что проверять'],
   secWhere: ['Where to show', 'Где показывать'],
