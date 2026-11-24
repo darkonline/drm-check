@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_extName__",
   "short_name": "__MSG_extShortName__",
-  "version": "1.0",
+  "version": "1.1",
   "description": "__MSG_extDescription__",
   "author": "Kreata Media",
   "homepage_url": "https://github.com/darkonline/drm-check",
@@ -13,11 +13,18 @@
     "48": "icons/icon-48.png",
     "128": "icons/icon-128.png"
   },
-  "permissions": ["storage"],
-  "host_permissions": ["https://catalog.gog.com/*"],
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://catalog.gog.com/*"
+  ],
   "action": {
     "default_popup": "settings/settings.html",
-    "default_icon": { "16": "icons/icon-16.png", "32": "icons/icon-32.png" }
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
   },
   "options_ui": {
     "page": "settings/settings.html",
@@ -25,13 +32,23 @@
   },
   "background": {
     "service_worker": "src/background.js",
-    "scripts": ["src/shared.js", "src/background.js"]
+    "scripts": [
+      "src/shared.js",
+      "src/background.js"
+    ]
   },
   "content_scripts": [
     {
-      "matches": ["https://store.steampowered.com/*"],
-      "js": ["src/shared.js", "src/content.js"],
-      "css": ["src/content.css"],
+      "matches": [
+        "https://store.steampowered.com/*"
+      ],
+      "js": [
+        "src/shared.js",
+        "src/content.js"
+      ],
+      "css": [
+        "src/content.css"
+      ],
       "run_at": "document_idle"
     }
   ]

@@ -144,6 +144,13 @@
 
   // ---------- facts → labels ----------
 
+  /** "EA Account" → "EA", "Rockstar Games Social Club" → "Rockstar": short names for chips in lists. */
+  function shortAccount(name) {
+    let s = String(name || '').trim();
+    for (let i = 0; i < 4; i++) s = s.replace(/\s+(account|accounts|games|social club|launcher|id|connect|app|network)$/i, '').trim();
+    return s || name;
+  }
+
   /** [{ kind: good|warn|bad|neutral, text, tip, href, list }] ; list = also shown as a chip in search results */
   function describe(f, gog) {
     const out = [];
@@ -159,7 +166,7 @@
     }
     if (settings.drm && 'drm' in f) {
       (f.drm || []).forEach(d => out.push({ kind: 'bad', text: t('factDrm', [d.name]), chip: /denuvo/i.test(d.name) ? 'Denuvo' : (d.name && d.name.length <= 22 ? d.name : t('chipDrm')), tip: [d.text, d.details].filter(Boolean).join(' · '), list: true }));
-      (f.accounts || []).forEach(a => out.push({ kind: 'warn', text: t('factAccount', [a.name]), chip: t('chipAccount', [a.name]), tip: a.text, list: true }));
+      (f.accounts || []).forEach(a => out.push({ kind: 'warn', text: t('factAccount', [a.name]), chip: t('chipAccount', [shortAccount(a.name)]), tip: a.text, list: true }));
       if (!(f.drm || []).length && !(f.accounts || []).length) out.push({ kind: 'good', text: t('factNoDrm'), tip: t('factNoDrmTip') });
     }
     if (settings.ai && 'ai' in f) {
@@ -360,7 +367,13 @@
 
   // ---------- main ----------
 
+  // After the extension is updated or reloaded, scripts already running in open tabs lose access to it.
+  // Such an orphaned script must stop instead of drawing broken chips.
+  const alive = () => { try { return !!(chrome.runtime && chrome.runtime.id); } catch (e) { return false; } };
+  const domObserver = new MutationObserver(() => schedule());
+
   function run() {
+    if (!alive()) { domObserver.disconnect(); return; }
     const path = location.pathname;
     if (/^\/app\/\d+/.test(path)) processAppPage();
     if (/^\/search/.test(path)) processSearch();
@@ -387,6 +400,6 @@
   DC.loadSettings().then(s => {
     settings = s;
     run();
-    new MutationObserver(schedule).observe(document.body, { childList: true, subtree: true });
+    domObserver.observe(document.body, { childList: true, subtree: true });
   });
 })();

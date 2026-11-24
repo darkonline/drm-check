@@ -1,6 +1,6 @@
 {
   "name": "drm-check",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Browser extension: shows on Steam third-party DRM, kernel anti-cheat, online-only play, AI content and DRM-free availability on GOG.",
   "license": "MIT",
