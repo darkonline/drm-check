@@ -1,0 +1,146 @@
+{
+  "extName": {
+    "message": "DRM Check — DRM, античит, онлайн и ИИ в Steam"
+  },
+  "extShortName": {
+    "message": "DRM Check"
+  },
+  "extDescription": {
+    "message": "Показывает в Steam, что ограничивает игру: сторонний DRM вроде Denuvo, античит ядра, игру только по сети, ИИ-контент — и продаётся ли она без DRM в GOG."
+  },
+  "secChecks": {
+    "message": "Что проверять"
+  },
+  "secWhere": {
+    "message": "Где показывать"
+  },
+  "set_drm": {
+    "message": "Сторонний DRM и аккаунты"
+  },
+  "hint_drm": {
+    "message": "Denuvo и другой DRM, лимиты активаций, обязательные сторонние аккаунты (EA, Ubisoft, Rockstar…)."
+  },
+  "set_antiCheat": {
+    "message": "Античит на уровне ядра"
+  },
+  "hint_antiCheat": {
+    "message": "Как указал разработчик на странице Steam."
+  },
+  "set_modes": {
+    "message": "Только по сети / MMO"
+  },
+  "hint_modes": {
+    "message": "Есть ли одиночный режим — по категориям Steam."
+  },
+  "set_ai": {
+    "message": "Контент, созданный ИИ"
+  },
+  "hint_ai": {
+    "message": "Раздел Steam «Информация об ИИ-контенте»."
+  },
+  "set_gog": {
+    "message": "Без DRM в GOG"
+  },
+  "hint_gog": {
+    "message": "Ищет игру в открытом каталоге GOG."
+  },
+  "set_lists": {
+    "message": "Значки в результатах поиска"
+  },
+  "hint_lists": {
+    "message": "Только заметное. Проверяет видимые строки по две за раз и запоминает результат на две недели."
+  },
+  "privacyNote": {
+    "message": "Расширение ничего о вас не собирает и никуда не отправляет. Запросы идут только в Steam и в каталог GOG."
+  },
+  "plateTitle": {
+    "message": "Проверка DRM"
+  },
+  "factSingle": {
+    "message": "Есть одиночный режим"
+  },
+  "factOnlineOnly": {
+    "message": "Только по сети — без одиночного режима"
+  },
+  "factMmo": {
+    "message": "MMO — нужно постоянное подключение"
+  },
+  "factModesTip": {
+    "message": "По категориям игры в Steam."
+  },
+  "factKernelAc": {
+    "message": "Античит ядра: $1"
+  },
+  "factAc": {
+    "message": "Античит: $1"
+  },
+  "factNoKernelAc": {
+    "message": "Античит ядра не заявлен"
+  },
+  "factNoKernelAcTip": {
+    "message": "Steam требует указывать античит уровня ядра; на этой странице его нет."
+  },
+  "factDrm": {
+    "message": "DRM: $1"
+  },
+  "factAccount": {
+    "message": "Нужен аккаунт: $1"
+  },
+  "factNoDrm": {
+    "message": "Сторонний DRM не заявлен"
+  },
+  "factNoDrmTip": {
+    "message": "Собственный DRM Steam может быть; сторонний DRM и обязательные аккаунты на странице не указаны."
+  },
+  "factAi": {
+    "message": "Использует ИИ-контент"
+  },
+  "factAiTip": {
+    "message": "Разработчик: «$1»"
+  },
+  "factNoAi": {
+    "message": "ИИ-контент не заявлен"
+  },
+  "factNoAiTip": {
+    "message": "На странице нет раздела об ИИ-контенте."
+  },
+  "factGogChecking": {
+    "message": "GOG: проверяю…"
+  },
+  "factGogYes": {
+    "message": "Без DRM в GOG ↗"
+  },
+  "factGogTip": {
+    "message": "Найдено в GOG как «$1». GOG продаёт игры без DRM; сетевые функции всё равно могут требовать аккаунт."
+  },
+  "factGogNo": {
+    "message": "В GOG нет"
+  },
+  "factGogNoTip": {
+    "message": "В каталоге GOG нет игры с точно таким названием. Возможно, она продаётся там под другим именем."
+  },
+  "factGogError": {
+    "message": "GOG: не удалось проверить"
+  },
+  "chipOnline": {
+    "message": "Только онлайн"
+  },
+  "chipMmo": {
+    "message": "MMO"
+  },
+  "chipKernelAc": {
+    "message": "Античит ядра"
+  },
+  "chipDrm": {
+    "message": "Сторонний DRM"
+  },
+  "chipAccount": {
+    "message": "Аккаунт $1"
+  },
+  "chipAi": {
+    "message": "ИИ-контент"
+  },
+  "chipGog": {
+    "message": "Без DRM в GOG"
+  }
+}

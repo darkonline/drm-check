@@ -1,0 +1,112 @@
+/* DRM Check — pink, so it never blends with Steam's own colours or with Owned Elsewhere's violet. */
+.dc-plate, .dc-chips, .dc-tip {
+  font-family: "Motiva Sans", Arial, Helvetica, sans-serif;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+}
+
+/* ---- game page plate (inside the product card) ---- */
+.dc-plate {
+  margin: 10px 0 4px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border-left: 4px solid #e0459b;
+  background: rgba(224, 69, 155, .16);
+  color: #fbe3f1;
+  font-size: 12px;
+  line-height: 1.4;
+}
+.dc-head {
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #f7a8d3;
+  margin-bottom: 5px;
+}
+.dc-list { display: flex; flex-wrap: wrap; gap: 4px; }
+.dc-fact {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, .3);
+  color: #fbe3f1;
+  text-decoration: none;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+a.dc-fact:hover { background: rgba(0, 0, 0, .5); text-decoration: underline; }
+
+.dc-fact::before, .dc-chip::before { margin-right: 4px; font-weight: bold; }
+.dc-good::before { content: "✓"; color: #7ee0a5; }
+.dc-warn::before { content: "!"; color: #ffd27a; }
+.dc-bad::before { content: "⚠"; color: #ff8a8a; }
+.dc-neutral::before { content: "–"; color: #c9b3c0; }
+.dc-pending { opacity: .7; }
+
+/* ---- search results ---- */
+/* Shared badge row under titles (also used by Owned Elsewhere): positioned, so the list row keeps its height. */
+.steam-ext-badges {
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  max-width: 440px;
+  margin-top: 1px;
+  overflow: hidden;
+  z-index: 2;
+  white-space: nowrap;
+  line-height: 16px;
+}
+.steam-ext-badges > * { flex: none; margin: 0 !important; }
+.steam-ext-badges > .dc-chips { order: 1; }
+.dc-chips {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 3px;
+  margin: 3px 0 1px;
+  padding-left: 6px;
+  border-left: 3px solid #e0459b;
+  line-height: 1.4;
+}
+.dc-chips[hidden] { display: none; }
+.dc-chip {
+  display: inline-block;
+  padding: 0 6px;
+  border-radius: 3px;
+  background: rgba(224, 69, 155, .22);
+  color: #fbe3f1;
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.dc-chip::before { margin-right: 3px; }
+a.dc-chip:hover { background: rgba(224, 69, 155, .4); text-decoration: underline; }
+
+/* ---- tooltip ---- */
+.dc-tip {
+  position: fixed;
+  z-index: 2147483647;
+  display: none;
+  max-width: min(420px, calc(100vw - 16px));
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: #0e141b;
+  border: 1px solid #e0459b;
+  color: #dfe6ec;
+  font-size: 12px;
+  line-height: 1.45;
+  white-space: normal;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, .6);
+  pointer-events: none;
+}
+.dc-tip > div + div { margin-top: 4px; }
+
+/* Placed on the platform line of a search result (see placeBadgeRow). */
+.steam-ext-badges.steam-ext-badges-placed { margin-top: 0; }
+.dc-chip { max-width: 200px; overflow: hidden; text-overflow: ellipsis; }

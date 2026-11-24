@@ -1,0 +1,36 @@
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 24px 16px 32px;
+  background: #1b2838;
+  color: #c7d5e0;
+  font: 13px/1.45 "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+}
+header, main { max-width: 640px; margin: 0 auto; }
+header { display: flex; gap: 12px; align-items: center; margin-bottom: 14px; }
+h1 { font-size: 20px; color: #fff; margin: 0; }
+h2 { font-size: 14px; color: #fff; margin: 18px 0 8px; }
+.muted { color: #8f98a0; margin: 2px 0 0; }
+.small { font-size: 12px; margin-top: 16px; }
+.checks { display: grid; gap: 6px; }
+.check {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: #1f2c3b;
+  border-left: 3px solid #e0459b;
+  cursor: pointer;
+}
+.check input { margin-top: 3px; accent-color: #e0459b; }
+.check b { display: block; color: #fff; font-weight: 600; }
+.check small { display: block; color: #8f98a0; font-size: 12px; }
+.check:focus-within { outline: 2px solid #e0459b; outline-offset: 1px; }
+
+body.popup { width: 340px; padding: 12px; }
+body.popup header { margin-bottom: 6px; }
+body.popup h1 { font-size: 16px; }
+body.popup h2 { margin: 10px 0 6px; }
+body.popup .check { padding: 6px 8px; }

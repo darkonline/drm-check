@@ -1,0 +1,146 @@
+{
+  "extName": {
+    "message": "DRM Check — DRM, anti-cheat, online and AI on Steam"
+  },
+  "extShortName": {
+    "message": "DRM Check"
+  },
+  "extDescription": {
+    "message": "Shows on Steam what restricts a game: third-party DRM like Denuvo, kernel anti-cheat, online-only play, AI content — and whether it is sold DRM-free on GOG."
+  },
+  "secChecks": {
+    "message": "What to check"
+  },
+  "secWhere": {
+    "message": "Where to show"
+  },
+  "set_drm": {
+    "message": "Third-party DRM and accounts"
+  },
+  "hint_drm": {
+    "message": "Denuvo and other DRM, activation limits, required third-party accounts (EA, Ubisoft, Rockstar…)."
+  },
+  "set_antiCheat": {
+    "message": "Kernel-level anti-cheat"
+  },
+  "hint_antiCheat": {
+    "message": "As disclosed by the developer on the Steam page."
+  },
+  "set_modes": {
+    "message": "Online only / MMO"
+  },
+  "hint_modes": {
+    "message": "Whether the game has single-player, from Steam categories."
+  },
+  "set_ai": {
+    "message": "AI-generated content"
+  },
+  "hint_ai": {
+    "message": "Steam’s “AI Generated Content Disclosure”."
+  },
+  "set_gog": {
+    "message": "DRM-free on GOG"
+  },
+  "hint_gog": {
+    "message": "Looks the title up in the public GOG catalog."
+  },
+  "set_lists": {
+    "message": "Chips in search results"
+  },
+  "hint_lists": {
+    "message": "Only what stands out. Looks up visible rows two at a time and remembers results for two weeks."
+  },
+  "privacyNote": {
+    "message": "Nothing about you is collected or sent anywhere. Requests go only to Steam and the GOG catalog."
+  },
+  "plateTitle": {
+    "message": "DRM check"
+  },
+  "factSingle": {
+    "message": "Single-player"
+  },
+  "factOnlineOnly": {
+    "message": "Online only — no single-player"
+  },
+  "factMmo": {
+    "message": "MMO — needs a permanent connection"
+  },
+  "factModesTip": {
+    "message": "Based on the game’s categories on Steam."
+  },
+  "factKernelAc": {
+    "message": "Kernel anti-cheat: $1"
+  },
+  "factAc": {
+    "message": "Anti-cheat: $1"
+  },
+  "factNoKernelAc": {
+    "message": "No kernel anti-cheat declared"
+  },
+  "factNoKernelAcTip": {
+    "message": "Steam requires games to disclose kernel-level anti-cheat; this page has none."
+  },
+  "factDrm": {
+    "message": "DRM: $1"
+  },
+  "factAccount": {
+    "message": "Requires account: $1"
+  },
+  "factNoDrm": {
+    "message": "No third-party DRM declared"
+  },
+  "factNoDrmTip": {
+    "message": "Steam’s own DRM may still apply; this page names no third-party DRM or required accounts."
+  },
+  "factAi": {
+    "message": "Uses AI-generated content"
+  },
+  "factAiTip": {
+    "message": "Developer: “$1”"
+  },
+  "factNoAi": {
+    "message": "No AI content declared"
+  },
+  "factNoAiTip": {
+    "message": "The page has no AI Generated Content Disclosure."
+  },
+  "factGogChecking": {
+    "message": "GOG: checking…"
+  },
+  "factGogYes": {
+    "message": "DRM-free on GOG ↗"
+  },
+  "factGogTip": {
+    "message": "Found on GOG as “$1”. GOG sells games without DRM; online features may still need an account."
+  },
+  "factGogNo": {
+    "message": "Not on GOG"
+  },
+  "factGogNoTip": {
+    "message": "No game with this exact title in the GOG catalog. It may be sold there under a different name."
+  },
+  "factGogError": {
+    "message": "GOG: could not check"
+  },
+  "chipOnline": {
+    "message": "Online only"
+  },
+  "chipMmo": {
+    "message": "MMO"
+  },
+  "chipKernelAc": {
+    "message": "Kernel anti-cheat"
+  },
+  "chipDrm": {
+    "message": "3rd-party DRM"
+  },
+  "chipAccount": {
+    "message": "$1 account"
+  },
+  "chipAi": {
+    "message": "AI content"
+  },
+  "chipGog": {
+    "message": "DRM-free on GOG"
+  }
+}
