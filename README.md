@@ -1,5 +1,9 @@
 # DRM Check — DRM, anti-cheat, online and AI on Steam
 
+[![Get it from Microsoft Edge Add-ons](store/badges/edge-add-ons.svg)](https://microsoftedge.microsoft.com/addons/detail/drm-check-%E2%80%94-drm-%D0%B0%D0%BD%D1%82%D0%B8%D1%87%D0%B8%D1%82/fdmhhlalfojonckcldkpjglphbkpifbp)
+
+![DRM Check on a Steam game page: the "DRM check" plate with online only, kernel anti-cheat, required account and AI content](store/screenshots/en/app-2073850.png)
+
 A browser extension that shows on the Steam store what restricts a game — before you buy it.
 
 On a **game page** a pink "DRM check" plate appears in the product card:
